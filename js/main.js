@@ -19,6 +19,7 @@
     });
     
     
+    
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -31,7 +32,8 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-    
+
+
     $(document).ready(function () {
         $('a.nav-link').click(function (e) {
             e.preventDefault();
@@ -42,7 +44,8 @@
             return false;
         });
     });
-    
+
+
     // Date and time picker
     $('#date').datetimepicker({
         format: 'L'
