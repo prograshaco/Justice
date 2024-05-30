@@ -33,24 +33,13 @@
         return false;
     });
 
-
-    $(document).ready(function () {
+$(document).ready(function () {
         $('a.nav-link').click(function (e) {
             e.preventDefault();
             let target = $(this).attr('href');
-            let $targetElement = $(target);
-            if ($targetElement.length) {
-                let targetOffset = $targetElement.offset();
-                if (targetOffset) {
-                    $('html, body').animate({
-                        scrollTop: targetOffset.top
-                    }, 1500, 'easeInOutExpo');
-                } else {
-                    console.error("El offset del elemento objetivo es undefined: " + target);
-                }
-            } else {
-                console.error("El elemento objetivo no se encuentra en el DOM: " + target);
-            }
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 1500, 'easeInOutExpo');
             return false;
         });
     });
