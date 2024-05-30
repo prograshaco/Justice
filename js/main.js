@@ -31,8 +31,18 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
-
+    
+    $(document).ready(function () {
+        $('a.nav-link').click(function (e) {
+            e.preventDefault();
+            let target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 1500, 'easeInOutExpo');
+            return false;
+        });
+    });
+    
     // Date and time picker
     $('#date').datetimepicker({
         format: 'L'
