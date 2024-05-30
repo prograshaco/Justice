@@ -24,6 +24,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* CSS para el desplazamiento suave */
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    
 </head>
 
 <body>
@@ -77,13 +86,12 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">Experiencia</a>
-                            <a href="service.html" class="nav-item nav-link">Nuestras areas</a>
-                            <a href="team.html" class="nav-item nav-link">Nuestro equipo</a>
-                            
-                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                            <a href="#link_exp" class="nav-item nav-link">Experiencia</a>
+                            <a href="#link_espe" class="nav-item nav-link">Nuestras Especialidades</a>
+                            <a href="#link_abo" class="nav-item nav-link">Nuestro equipo</a>
+                            <a href="#link_redes" class="nav-item nav-link">Contacto</a>
                         </div>
-                        <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Te contactamos</a>
+                        <a href="#link_forms" class="btn btn-primary mr-3 d-none d-lg-block">Te contactamos</a>
                     </div>
                 </nav>
             </div>
@@ -133,7 +141,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="link_exp">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5">
@@ -153,7 +161,7 @@
 
 
     <!-- Services Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="link_espe">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-3">
@@ -202,7 +210,7 @@
 
 
     <!-- Appointment Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="link_forms">
         <div class="container py-5">
             <div class="bg-appointment rounded">
                 <div class="row h-100 align-items-center justify-content-center">
@@ -320,7 +328,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="link_abo">
         <div class="container py-5">
             <div class="text-center pb-2">
                 <h6 class="text-uppercase">Nuestros Abogados</h6>
@@ -461,7 +469,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+    <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;" id="link_redes">
         <div class="row mt-5">
             <div class="col-lg-4">
                 <div class="d-flex justify-content-lg-center p-4" style="background: rgba(256, 256, 256, .05);">
